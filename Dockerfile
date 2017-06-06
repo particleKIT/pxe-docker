@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 EXPOSE 80 69
 
-VOLUME ["/usr/local/apache2/htdocs","/var/lib/tftpboot"]
+VOLUME ["/usr/local/apache2/htdocs","/srv/tftp"]
 
 ADD init.sh /
 
